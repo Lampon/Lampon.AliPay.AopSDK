@@ -32,7 +32,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -4005,8 +4007,6 @@
     <Compile Include="Response\ZolozIdentificationUserWebInitializeResponse.cs" />
     <Compile Include="Response\ZolozIdentificationUserWebQueryResponse.cs" />
     <Compile Include="SignItem.cs" />
-    <Compile Include="Test\PublicTest.cs" />
-    <Compile Include="Test\TestImage.cs" />
     <Compile Include="Util\AlipayEncrypt.cs" />
     <Compile Include="Util\AlipaySignature.cs" />
     <Compile Include="Util\AopUtils.cs" />
@@ -4015,10 +4015,6 @@
     <Compile Include="Util\RSAUtil.cs" />
     <Compile Include="Util\StringUtil.cs" />
     <Compile Include="Util\WebUtils.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Test\aop-sandbox-RSA-private-c#.pem" />
-    <None Include="Test\public-key.pem" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
